@@ -1,7 +1,7 @@
 # DayCalendar
 A simple current day calendar application.
 
-https://buzwrecks.github.io/PasswordGenerator/
+https://buzwrecks.github.io/DayCalendar/
 
 ## A simple current day calendar application.
 This application was created to provide a visual overview of a work-day, where the current hour displays as a red box, past hours display as a grey box, and future hours display as green boxes. 
