@@ -32,17 +32,17 @@ $(document).ready(function () {
 
     });
 
-// set to local storage
+// save information to local storage
     $(".saveBtn").click(function (event) {
     event.preventDefault();
-    
+// credit to jfisher396 https://github.com/jfisher396/workday-scheduler for line 39
     var time = $(this).parent().attr("id").split("-")[1];
     var value = $(this).siblings("#userInput").val();
     localStorage.setItem(time, value);
   });
 
 // retrieve from local storage  --  I know I should be using a .class here for the #userInput, but I was unable to make the code work with a class, but it works with the id. 
-
+// credit to jfisher396 https://github.com/jfisher396/workday-scheduler for lines 46 - 54
   $("#hour-09 #userInput").val(localStorage.getItem("09"));
   $("#hour-10 #userInput").val(localStorage.getItem("10"));
   $("#hour-11 #userInput").val(localStorage.getItem("11"));
